@@ -21,10 +21,10 @@ def load_css():
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # Try to load CSS, create default if file doesn't exist
-try:
-    load_css()
-except FileNotFoundError:
-    st.warning("styles.css not found. Default styling will be applied.")
+# try:
+#     load_css()
+# except FileNotFoundError:
+#     st.warning("styles.css not found. Default styling will be applied.")
 
 # Add background color to the main content
 st.markdown("""

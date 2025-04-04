@@ -24,7 +24,7 @@ def show_explainable_ai_page(df):
     
     # Create a subtitle
     st.markdown("""
-    <div style="background-color: white; padding: 5px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 5px;">
+    <div style="background-color: white; padding: 5px; border-radius: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 5px;">
         <p style="color: #333; text-align: center; font-size: 18px;">Explore how the model makes predictions and which factors influence the results.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -363,8 +363,8 @@ def show_what_if_analysis(model, encoder, df):
         # Display prediction
         st.markdown(f"""
         <div style="background-color: #e8f5e9; padding: 2px; border-radius: 10px; margin: 5px 0; text-align: center; border-left: 4px solid #4CAF50;">
-            <h2 style="margin: 10px 0; color: #2c3e50;">Predicted Demand with Current Settings</h2>
-            <p style="font-size: 32px; font-weight: bold; color: #4CAF50; margin: 10px 0;">{prediction:.2f} units</p>
+            <h2 style="margin: 2px 0; color: #2c3e50;">Predicted Demand with Current Settings</h2>
+            <p style="font-size: 2-px; font-weight: bold; color: #4CAF50; margin: 2px 0;">{prediction:.2f} units</p>
         </div>
         """, unsafe_allow_html=True)
         

@@ -7,6 +7,7 @@ from home import show_home_page
 from visualizations import show_visualizations_page
 from predictions import show_predictions_page
 from explainable_ai import show_explainable_ai_page
+import gdown
 
 # Set page configuration to wide mode
 st.set_page_config(
@@ -74,7 +75,15 @@ st.markdown("""
 # Load Data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/Admin/Documents/CT/school/PF/Data/historical_data.csv")
+    file_id = "1Oj2n3_DcJVk7q6Cn0v2TNamgP9unnUpi"
+    url = f"https://drive.google.com/uc?id={file_id}"
+
+
+    output = "downloaded_file.csv"
+    gdown.download(url, output, quiet=False)
+
+    # Read the CSV file
+    df = pd.read_csv(output)
     # Drop 'Unnamed: 0' column if it exists
     if 'Unnamed: 0' in df.columns:
         df = df.drop('Unnamed: 0', axis=1)

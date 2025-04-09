@@ -1,4 +1,4 @@
-﻿# 📊 Health Comodities Usage Analytics nKenya
+﻿# 📊 Health Comodities Usage Analytics Kenya
 
 A data-driven Streamlit web app focused on forecasting Family Planning (FP) commodity needs across Kenya using machine learning and geospatial visualizations.
 
